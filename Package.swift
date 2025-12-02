@@ -4,14 +4,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "AgreementKit",
+    name: "AgreementKit-SwiftUI",
     platforms: [
          .iOS(.v15)
     ],
     products: [
         .library(
-            name: "AgreementKit",
-            targets: ["AgreementKit"]
+            name: "AgreementKit-SwiftUI",
+            targets: ["AgreementKit-SwiftUI"]
         ),
     ],
     dependencies: [
@@ -22,13 +22,13 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "AgreementKit",
+            name: "AgreementKit-SwiftUI",
             dependencies: ["ControlKitBase"],
             resources: [.process("Resources")]
         ),
         .testTarget(
-            name: "AgreementKitTests",
-            dependencies: ["AgreementKit"]
+            name: "AgreementKit-SwiftUITests",
+            dependencies: ["AgreementKit-SwiftUI"]
         ),
     ]
 )

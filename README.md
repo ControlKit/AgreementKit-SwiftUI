@@ -47,7 +47,7 @@ Add AgreementKit SwiftUI to your project using Swift Package Manager:
 Add this line to your `Podfile`:
 
 ```ruby
-pod 'AgreementKit'
+pod 'AgreementKit-SwiftUI'
 ```
 
 Then run:
@@ -64,7 +64,7 @@ The simplest way to integrate AgreementKit in your SwiftUI app:
 
 ```swift
 import SwiftUI
-import AgreementKit
+import AgreementKit-SwiftUI
 
 struct ContentView: View {
     @State private var showAgreement = false
@@ -100,7 +100,7 @@ For an even cleaner approach, use the built-in view modifier:
 
 ```swift
 import SwiftUI
-import AgreementKit
+import AgreementKit-SwiftUI
 
 struct ContentView: View {
     @State private var showAgreement = false
@@ -132,7 +132,7 @@ You can also present the agreement view programmatically:
 
 ```swift
 import SwiftUI
-import AgreementKit
+import AgreementKit-SwiftUI
 
 struct ContentView: View {
     @State private var agreementView: AgreementViewWrapper?
@@ -220,7 +220,7 @@ serviceConfig.viewConfig = viewConfig
 
 ```swift
 import SwiftUI
-import AgreementKit
+import AgreementKit-SwiftUI
 
 struct CustomAgreementView: View {
     @State private var showAgreement = false
