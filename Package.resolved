@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "controlkitbase",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ControlKit/ControlKitBase.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "121cfe7dc8fde297e8e9e039568adefd817e8286"
+      }
+    }
+  ],
+  "version" : 2
+}
