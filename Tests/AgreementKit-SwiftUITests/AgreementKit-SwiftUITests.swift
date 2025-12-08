@@ -1,5 +1,5 @@
 import XCTest
-@testable import AgreementKit-SwiftUI
+@testable import AgreementKit_SwiftUI
 
 final class AgreementKitTests: XCTestCase {
     func testExample() throws {
