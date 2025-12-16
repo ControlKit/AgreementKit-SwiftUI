@@ -112,10 +112,12 @@ public struct AgreementView: View {
                 .padding(.top, 20)
                 .padding(.bottom, 30)
             }
+            .ignoresSafeArea()
         }
         .onAppear {
             processDescription()
         }
+        .ignoresSafeArea()
     }
     
     private func processDescription() {

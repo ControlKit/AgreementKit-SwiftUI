@@ -18,31 +18,18 @@ public struct AgreementViewWrapper: View {
     }
     
     public var body: some View {
-        NavigationView {
-            AgreementView(
-                viewModel: viewModel,
-                config: config,
-                onAccept: {
-                    viewModel.acceptAction()
-                    dismiss()
-                },
-                onDecline: {
-                    viewModel.declineAction()
-                    dismiss()
-                }
-            )
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button(action: {
-                        dismiss()
-                    }) {
-                        Image(systemName: "xmark")
-                            .foregroundColor(.white)
-                    }
-                }
+        AgreementView(
+            viewModel: viewModel,
+            config: config,
+            onAccept: {
+                viewModel.acceptAction()
+                dismiss()
+            },
+            onDecline: {
+                viewModel.declineAction()
+                dismiss()
             }
-        }
+        )
         .onAppear {
             viewModel.viewAction()
         }
